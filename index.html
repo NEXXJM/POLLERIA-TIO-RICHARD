@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <link rel="website icon" type="png"
+  href="TIO-RICHARD-icon.png">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pollería TIO RICHARD</title>
+
+  <!-- Metadatos Open Graph -->
+  <meta property="og:title" content="Pollería TIO RICHARD">
+  <meta property="og:description" content="La mejor pollería de la ciudad. Ven y disfruta.">
+  <meta property="og:image" content="https://scontent-lim1-1.xx.fbcdn.net/v/t1.6435-9/179525514_100111955585191_7943892210456871016_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=_4DYBM2R44oQ7kNvwG7lBjN&_nc_oc=AdlmMK32SpQu40ugodBfgpxkqWImULsgOZonSjznapIfW860kxBIIYfYdek0g7FHVuQ&_nc_zt=23&_nc_ht=scontent-lim1-1.xx&_nc_gid=1ZoIyuMe2lf81CJ0UzQgpA&oh=00_AfWQIjGh5XCq4xtg9D3v01rLecZmvcv6uO3ws0bZze8gtA&oe=68C11399">
+  <meta property="og:url" content="https://nexxjm.github.io/POLLERIA-TIO-RICHARD/">
+  <meta property="og:type" content="website">
+
+
+
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <!-- Agrega esto justo después de la etiqueta <body> y antes del <header> -->
+  <div class="logo-esquina">
+  <header>
+    <h2 style="font-size: 20px; margin: 0;">Pollería</h2>
+    <h1 style="line-height: 1;">
+      <span>T</span><span>I</span><span>O</span><br>
+      <span>R</span><span>I</span><span>C</span><span>H</span><span>A</span><span>R</span><span>D</span>
+    </h1>
+  </header>
+
+  <section class="menu">
+
+    <!-- Plato 1 -->
+    <div class="item">
+      <img src="pollo-a-la-brasa.jpg" alt="Pollo a la Brasa">
+      <h3>1 Pollo a la Brasa</h3>
+      <p>Pollo entero, porcion de papas, cremas y ensalada</p>
+      <p><strong>S/ 50.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Pollo a la Brasa')">Pedir</button>
+    </div>
+
+    <!-- Plato 2 -->
+    <div class="item">
+      <img src="1-2-pollo.jpg" alt="1/2 de Pollo">
+      <h3>1/2 de pollo</h3>
+      <p>1/2 de pollo con porcion de papas cremas y ensalada</p>
+      <p><strong>S/ 28.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('1/2 de pollo')">Pedir</button>
+    </div>
+
+    <!-- Plato 3 -->
+    <div class="item">
+      <img src="1-4-pollo-a-la-brasa.jpg" alt="1/4 de Pollo">
+      <h3>1/4 de pollo</h3>
+      <p>1/4 de pollo con papas cremas y ensalada</p>
+      <p><strong>S/ 15.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('1/4 de pollo')">Pedir</button>
+    </div>
+
+    <!-- Plato 4 -->
+    <div class="item">
+      <img src="octavodepollo.png" alt="1/8 de Pollo">
+      <h3>1/8 de pollo</h3>
+      <p>1/8 de pollo con papas cremas y ensalada</p>
+      <p><strong>S/ 12.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('1/8 de pollo')">Pedir</button>
+    </div>
+
+    <!-- Plato 5 -->
+    <div class="item">
+      <img src="chaufa.jpg" alt="Arroz Chaufa">
+      <h3>Arroz Chaufa</h3>
+      <p>Chifa con pollo frito y arroz</p>
+      <p><strong>S/ 12.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Arroz Chaufa')">Pedir</button>
+    </div>
+
+    <!-- Plato 6 -->
+    <div class="item">
+      <img src="aeropuerto.jpg" alt="Aeropuerto">
+      <h3>Aeropuerto</h3>
+      <p>Chifa con pollo, tallarín, arroz, frejol chino y cremas</p>
+      <p><strong>S/ 13.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Aeropuerto')">Pedir</button>
+    </div>
+
+    <!-- Plato 7 -->
+    <div class="item">
+      <img src="anticucho.jpg" alt="Anticucho">
+      <h3>Anticucho</h3>
+      <p>2 palitos de anticucho a la parrilla con papas, cremas y ensalada</p>
+      <p><strong>S/ 20.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Anticucho')">Pedir</button>
+    </div>
+
+    <!-- Plato 8 -->    
+    <div class="item">
+      <img src="churrasco.webp" alt="Churrasco">
+      <h3>Churrasco</h3>
+      <p>Churrasco con papas, cremas y ensalada</p>
+      <p><strong>S/ 18.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Churrasco')">Pedir</button>
+    </div>
+
+    <!-- Plato 9 -->
+    <div class="item">
+      <img src="monstro.jpg" alt="Monstro">
+      <h3>Monstro</h3>
+      <p>1/4 de pollo con chaufa, papas, cremas y ensalada</p>
+      <p><strong>S/ 18.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Monstro')">Pedir</button>
+    </div>
+
+    <!-- Plato 10 -->
+    <div class="item">
+      <img src="mostrito.webp" alt="Monstrito">
+      <h3>Monstrito</h3>
+      <p>1/8 de pollo con chaufa, papas, cremas y ensalada</p>
+      <p><strong>S/ 13.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Monstrito')">Pedir</button>
+    </div>
+
+    <!-- Plato 11 -->
+    <div class="item">
+      <img src="combinado-pollo-1.png" alt="Combinado de Pollo">
+      <h3>Combinado de Pollo</h3>
+      <p>combinado de pollo con chaufa y cremas</p>
+      <p><strong>S/ 14.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Combinado de Pollo')">Pedir</button>
+    </div>
+
+    <!-- Plato 12 -->
+    <div class="item">
+      <img src="caldo-de-gallina.jpg" alt="Caldo de Gallina">
+      <h3>Caldo de Gallina</h3>
+      <p>Caldo con Gallina, fideos, huevo</p>
+      <p>Por separado: limón, cebolla china y cancha</p>
+      <p><strong>S/ 10.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Caldo de Gallina')">Pedir</button>
+    </div>
+
+    <!-- Plato 13 -->
+    <div class="item">
+      <img src="sopa-a-la-minuta.jpg" alt="Sopa a la Minuta">
+      <h3>Sopa a la Minuta</h3>
+      <p>Sopa de carne, fideos, huevo frito y leche</p>
+      <p><strong>S/ 12.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Sopa a la Minuta')">Pedir</button>
+    </div>
+
+    <!-- Plato 14 -->
+    <div class="item">
+      <img src="Sopa-Wantan.jpg" alt="Sopa Wantan">
+      <h3>Sopa Wantan</h3>
+      <p>Sopa con wantan, pollo, fideos y verduras</p>
+      <p><strong>S/ 12.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Sopa Wantan')">Pedir</button>
+    </div>
+
+    <!-- Plato 15 -->
+    <div class="item">
+      <img src="SOPA-SUSTANCIA.jpg" alt="Sopa Sustancia">
+      <h3>Sopa Sustancia</h3>
+      <p>Sopa de carne, fideos, una mezcla de verduras frescas y limón</p>
+      <p><strong>S/ 12.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Sopa Sustancia')">Pedir</button>
+    </div>
+
+    <!-- Plato 16 -->
+    <div class="item">
+      <img src="broster.avif" alt="Broster">
+      <h3>Broster</h3>
+      <p>Pollo broaster con papas fritas y ensalada</p>
+      <p><strong>S/ 18.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Broster')">Pedir</button>
+    </div>
+
+    <!-- Plato 17 -->
+    <div class="item">
+      <img src="tipakay.png" alt="tipakay">
+      <h3>Tipakay</h3>
+      <p>Porción de tipakay con arroz chaufa</p>
+      <p><strong>S/ 18.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Tipakay')">Pedir</button>
+    </div>
+
+    <!-- Plato 18 -->
+    <div class="item">
+      <img src="lomo saltado.jpeg" alt="Lomo Saltado">
+      <h3>Lomo Saltado</h3>
+      <p>Porción de lomo saltado con papas, cremas y ensalada</p>
+      <p><strong>S/ 20.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Lomo Saltado')">Pedir</button>
+    </div>
+
+    <!-- Plato 19 -->
+    <div class="item">
+      <img src="tallarin-chifa.jpg" alt="Tallarin Chifa">
+      <h3>Tallarin Chifa</h3>
+      <p>Porción de tallarín chifa con pollo y verduras</p>
+      <p><strong>S/ 14.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Tallarin Chifa')">Pedir</button>
+    </div>
+
+    <!-- oferta 1 -->
+    <div class="item item-doble">
+      <img src="TIO-RICHARD.png" alt="Oferta 1">
+      <h3>Oferta 1</h3>
+      <p>1/2 POLLO + CHAUFA + GASEOSA INCA KOLA 600ML + PAPAS + CREMAS + ENSALADA.</p>
+      <p><strong>S/ 42.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Oferta 1 ------>1/2 POLLO + CHAUFA + GASEOSA INCA KOLA 600ML + PAPAS + CREMAS + ENSALADA.')">Pedir</button>
+    </div>
+
+    <!-- oferta 2 -->
+    <div class="item item-doble">
+      <img src="TIO-RICHARD.png" alt="Oferta 2">
+      <h3>Oferta 2</h3>
+      <p>1 POLLO + CHAUFA + PAPAS + CREMAS + ENSALADA.</p>
+      <p><strong>S/ 60.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Oferta 2')">Pedir</button>
+    </div>
+
+    <!-- oferta 3 -->
+    <div class="item item-doble">
+      <img src="TIO-RICHARD.png" alt="Oferta 3">
+      <h3>Oferta 3</h3>
+      <p>1 POLLO + 1/4 POLLO SOLO + GASEOSA PEPSI + PAPAS + CREMAS + ENSALADA.</p>
+      <p><strong>S/ 65.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Oferta 3')">Pedir</button>
+    </div>
+
+    <!-- oferta 4 -->
+    <div class="item item-doble">
+      <img src="TIO-RICHARD.png" alt="Oferta 4">
+      <h3>Oferta 4</h3>
+      <p>1 POLLO + 1/4 POLLO SOLO + CHAUFA + PAPAS + CREMAS + ENSALADA.</p>
+      <p><strong>S/ 72.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Oferta 4')">Pedir</button>
+    </div>
+
+    <!-- oferta 5 -->
+    <div class="item item-doble">
+      <img src="TIO-RICHARD.png" alt="Oferta 5">
+      <h3>Oferta 5</h3>
+      <p>1 POLLO + 1/2 POLLO + CHAUFA + GASEOSA PEPSI 1.5L + PAPAS + CREMAS + ENSALADA.</p>
+      <p><strong>S/ 93.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Oferta 5')">Pedir</button>
+    </div>
+
+    <!-- oferta 6 -->
+    <div class="item item-doble">
+      <img src="TIO-RICHARD.png" alt="Oferta 6">
+      <h3>Oferta 6</h3>
+      <p>2 POLLOS + CHAUFA + GASEOSA PEPSI 3L + PAPAS + CREMAS + ENSALADA.</p>
+      <p><strong>S/ 115.00</strong></p>
+      <button class="shadow__btn" onclick="enviarPedido('Oferta 6')">Pedir</button>
+    </div>
+
+
+  </section>
+
+    <div class="cuadro-mensaje">
+      <label for="mensaje-final">¿Quieres dejar un comentario?</label>
+      <textarea id="mensaje-final" placeholder="Escribe aquí tu mensaje..."></textarea>
+      <button class="shadow__btn" onclick="enviarComentarioWhatsApp()">Enviar</button>
+    </div>
+  </footer>
+
+  <footer>
+    <p class="frase-animada">
+      <span>P</span><span>o</span><span>r</span><span>q</span><span>u</span><span>e</span> 
+      <span>l</span><span>o</span> <span>b</span><span>u</span><span>e</span><span>n</span><span>o</span> 
+      <span>s</span><span>i</span><span>e</span><span>m</span><span>p</span><span>r</span><span>e</span> 
+      <span>l</span><span>o</span> <span>e</span><span>n</span><span>c</span><span>u</span><span>e</span><span>n</span><span>t</span><span>r</span><span>a</span><span>s</span></span> <span></span> 
+      <span>c</span><span>o</span><span>n</span> <span>n</span><span>o</span><span>s</span><span>o</span><span>t</span><span>r</span><span>o</span><span>s</span>, 
+      <span>c</span><span>o</span><span>m</span><span>i</span><span>d</span><span>a</span> <span>d</span><span>e</span> 
+      <span>c</span><span>a</span><span>l</span><span>i</span><span>d</span><span>a</span><span>d</span> 
+      <span>p</span><span>a</span><span>r</span><span>a</span> <span>s</span><span>u</span> <span>h</span><span>o</span><span>g</span><span>a</span><span>r</span>
+    </p>
+
+
+
+  <script>
+    function enviarPedido(plato) {
+      const numero = '+51933222894'; // <-- Reemplaza con tu número de WhatsApp real
+      const mensaje = `Hola, quiero hacer un pedido de: ${plato}`;
+      const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+      window.open(url, '_blank');
+    }
+
+    function enviarComentarioWhatsApp() {
+      const numero = '+51933222894'; // Cambia por tu número real si lo deseas
+      const mensaje = document.getElementById('mensaje-final').value.trim();
+      if (!mensaje) {
+        alert('Por favor escribe un mensaje antes de enviar.');
+        return;
+      }
+      const url = `https://wa.me/${numero}?text=${encodeURIComponent('Comentario: ' + mensaje)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>
